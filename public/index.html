@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Estimate Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center text-primary">EZ Roofing Estimator</h1>
+        <div id="chat" class="card mt-4" style="display: none;">
+            <div class="card-header bg-primary text-white text-center">RoofGPT</div>
+            <div id="chat-box" class="card-body chat-box" style="height: 400px; overflow-y: auto; border: 1px solid #ddd;"></div>
+            <div class="card-footer input-container d-flex">
+                <input type="text" id="user-input" class="form-control" placeholder="Enter your response here..." />
+                <button onclick="sendMessage()" class="btn btn-primary ml-2">Send</button>
+                <button onclick="restartChat()" class="btn btn-warning ml-2">Restart Chat</button> <!-- Changed button -->
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <button id="start-chat-btn" onclick="startChat()" class="btn btn-success">Start Chat</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
